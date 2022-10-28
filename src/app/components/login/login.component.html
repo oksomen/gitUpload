@@ -1,0 +1,110 @@
+<!-- <section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+
+            <div class="mb-md-5 mt-md-4 pb-5">
+
+              <h2 class="fw-bold mb-2 text-uppercase">Admin Login</h2>
+              <p class="text-white-50 mb-5">Please enter your Email and password!</p>
+
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="typeEmailX" class="form-control form-control-lg" />
+                <label class="form-label" for="typeEmailX">Email</label>
+              </div>
+
+              <div class="form-outline form-white mb-4">
+                <input [type]="showPass ? 'text':'password'" id="typePasswordX" class="form-control form-control-lg" />
+                <mat-icon>visibility</mat-icon>
+                <label class="form-label" for="typePasswordX">Password</label>
+                <br>
+                
+                <input type="checkbox" (change)="showHidePass($event)">show/hide pass
+              </div>
+
+              <button class="btn btn-outline-light btn-lg px-5"
+              [routerLink]="['/dashboard/dash']"type="submit" (click)="login()">Login</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ -->
+
+ 
+
+
+ <mat-toolbar color="primary">
+  <span>
+    <button mat-button routerLink="/"><mat-icon>home</mat-icon></button>
+  </span>
+  <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+    <button mat-button  >
+      <!-- <mat-icon>power_settings_new</mat-icon> -->
+      
+    </button>
+    
+  </div>
+
+  <div class="container">
+
+   <h4><ul>Please Enter Admin Id </ul> </h4></div>
+     
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+   
+</mat-toolbar>
+
+
+
+
+
+
+
+
+<mat-card>
+  <mat-card-content>
+    <form [formGroup]="userForm1" >
+      <h2>Log In</h2>
+      
+      <mat-form-field>
+        <input matInput placeholder="User Id"  formControlName="userId"
+          required>
+        <mat-error>
+          Please provide a valid userId 
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="any"  formControlName="userPassword"
+         placeholder="Password" required>
+        <mat-error>
+          Please provide a valid password
+        </mat-error>
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="isLogin()"
+      [disabled]="userForm1.invalid" >Login</button>
+    </form>
+  </mat-card-content>
+</mat-card> 
+<h1>{{ok}}</h1>
+
+
+
+
+
+<!-- <br><br><br><br><br><br><br><br><br><br>
+<form #loginForm="ngForm">
+<label for="">userId</label>
+<input type="text" [(ngModel)]="userId" name="userId">
+<br>
+<label for="">userPassword</label>
+  <input type="text" [(ngModel)]="userPassword" name="userPassword">
+  <button (click)="isLogin()" >login</button>
+</form> -->

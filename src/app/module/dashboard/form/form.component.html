@@ -1,0 +1,74 @@
+
+<p>
+    <mat-toolbar color="primary">
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        </button>
+        <span>Go to DashBoard</span>
+        <button mat-icon-button eclass="example-icon favorite-icon" aria-labl="Example icon-button with heart icon">
+            <mat-icon [routerLink]="'/dashboard/dash'" aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+        </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            <mat-icon></mat-icon>
+        </button>
+    </mat-toolbar>
+</p>
+
+<div>
+    <h2 class="ok">
+<strong><u> Please Submit The Form:- </u></strong>
+</h2>
+</div>
+<hr>
+
+<div class="container" align="center">
+    <form [formGroup]="userForm" >
+        <div class="form-group">
+            <!-- For Name -->
+            <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="userName"
+                 placeholder="Please Enter Your Name" >
+                <mat-hint>Name</mat-hint>
+                
+            </mat-form-field>
+
+            <br>
+
+            <!-- For Email -->
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="userEmail"
+                 placeholder="Please Enter Your EmailId" >
+                <mat-hint>Email</mat-hint>
+                
+            </mat-form-field>
+
+            <br>
+
+            <!-- For Phone number -->
+            <mat-form-field appearance="outline">
+                <mat-label>Phone </mat-label>
+                <input  matInput formControlName="phoneNo"
+                placeholder="Pleaer Enter Your Phone Number">
+                <mat-hint type="number">Phone Number</mat-hint>
+            </mat-form-field>
+
+            <br>
+
+            <!-- for address -->
+            <mat-form-field appearance="outline">
+                <mat-label>Address</mat-label>
+                <input matInput formControlName="userAddress"
+                 placeholder="Please Enter Your Name" >
+                <mat-hint>Address</mat-hint>
+            </mat-form-field>
+
+            <br>
+
+            <button mat-raised-button [disabled]="userForm.invalid"
+            color="accent" (click)="sendData()"> Submit </button>
+        </div>
+    </form>
+
+</div>
+

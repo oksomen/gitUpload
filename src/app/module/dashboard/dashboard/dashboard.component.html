@@ -1,0 +1,100 @@
+ <p>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+
+      <button mat-icon-button color="warn" class="example-icon fixed-left"
+       aria-label="Example icon button with a menu icon">
+        <mat-icon (click)="sideNav.toggle()">menu</mat-icon>
+      </button>
+
+      <span>My Info</span>
+      <span class="example-spacer"></span>
+      <button mat-raised-button color="warn" [routerLink]="''">
+      Logout
+      <mat-icon>exit_to_app</mat-icon>
+      </button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <!-- side nav -->
+    <mat-sidenav-container>
+      <mat-sidenav #sideNav>
+        
+        <mat-nav-list>
+          <a mat-list-item >
+            
+            <button mat-button color="primary">
+              <mat-icon>dashboard</mat-icon>
+              Dashboard</button>
+          </a>
+
+          <a mat-list-item [routerLink]="'/dashboard/form'">
+            
+            <button mat-button color="accent">
+              <mat-icon>assignment</mat-icon>User Form</button>
+          </a>
+
+          <a mat-list-item [routerLink]="'/dashboard/user'">
+            
+            <button mat-button color="primary"><mat-icon>list</mat-icon>
+              User Data</button>
+          </a>
+
+          <a mat-list-item>
+           
+            <button mat-button color="warn">
+              <mat-icon>help</mat-icon>Help</button>
+          </a>
+
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-container>
+          <div class="container" style="height: 88vh;">
+         <h2 class="h2" align="center">
+          &#169;CopyWrite By Lord of Zorro
+         </h2>
+      </div>
+  
+        
+      </mat-sidenav-container>
+    </mat-sidenav-container>
+  </p>
+
+<!-- <mat-menu #menu="matMenu">
+  <button mat-raised-button color="primary"
+  [routerLink]="'/dashboard/form'">open froms</button>
+<br>
+<br><br>
+  <button mat-raised-button color="primary"
+  [routerLink]="'/dashboard/user'">open userTable</button>
+</mat-menu> -->
+  
+
+
+<!-- <div class="container">
+  <button mat-raised-button color="primary"
+   [routerLink]="'/dashboard/form'">open froms</button>
+</div>
+
+<br>
+<div class="container">
+  <button mat-raised-button color="primary"
+   [routerLink]="'/dashboard/user'">open userTable</button>
+</div> -->
+
+  
+
+
+
+<!-- mat nav bar -->
+
+
+
+
+
+
+
+
+
+
+   
