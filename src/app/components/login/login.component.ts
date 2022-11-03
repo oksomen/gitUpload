@@ -50,7 +50,7 @@ isSubscribedToEmailsMessage: any;
         // console.log(res.successStatus)
         // sessionStorage.setItem("userId",res._id);
         alert('sign in complete');
-        this.router.navigate(['/dashboard/dash']);
+        this.router.navigate(['/dashboard/dash/dashboard1']);
       }else{
         alert(res.message);
         // this.ok = res.message

@@ -1,3 +1,4 @@
+<!-- 
 
 <p>
     <mat-toolbar color="primary">
@@ -11,7 +12,7 @@
             <mat-icon></mat-icon>
         </button>
     </mat-toolbar>
-</p>
+</p>  -->
 
 <div>
     <h2 class="ok">
@@ -23,7 +24,6 @@
 <div class="container" align="center">
     <form [formGroup]="userForm" >
         <div class="form-group">
-            <!-- For Name -->
             <mat-form-field appearance="outline">
                 <mat-label>Name</mat-label>
                 <input matInput formControlName="userName"
@@ -34,7 +34,6 @@
 
             <br>
 
-            <!-- For Email -->
             <mat-form-field appearance="outline">
                 <mat-label>Email</mat-label>
                 <input matInput formControlName="userEmail"
@@ -45,7 +44,6 @@
 
             <br>
 
-            <!-- For Phone number -->
             <mat-form-field appearance="outline">
                 <mat-label>Phone </mat-label>
                 <input  matInput formControlName="phoneNo"
@@ -55,7 +53,6 @@
 
             <br>
 
-            <!-- for address -->
             <mat-form-field appearance="outline">
                 <mat-label>Address</mat-label>
                 <input matInput formControlName="userAddress"
@@ -69,6 +66,6 @@
             color="accent" (click)="sendData()"> Submit </button>
         </div>
     </form>
+    
 
 </div>
-

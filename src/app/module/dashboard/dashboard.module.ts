@@ -35,13 +35,15 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { EditFormComponent } from './edit-form/edit-form.component';
+import { Dashboard1Component } from './dashboard1/dashboard1.component';
 
 @NgModule({
   declarations: [
     UserComponent,
     FormComponent,
     DashboardComponent,
-    EditFormComponent
+    EditFormComponent,
+    Dashboard1Component
   ],
   imports: [
     CommonModule,

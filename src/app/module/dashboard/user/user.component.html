@@ -1,4 +1,4 @@
- <p>
+<!--<p>
   <mat-toolbar color="primary">
       <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       </button>
@@ -13,9 +13,9 @@
 </p>
 <div class="container">
   <h3><b> <u>All User Details:</u>  </b></h3>
-</div> 
+</div>  
 
-   
+ Commented section ends -->
 
 
 
@@ -76,10 +76,11 @@
   </div> -->
   
 
-  <!-- <br><br><br> -->
+  <!-- <br><br><br> 
 
-  <button mat-raised-button color="accent" [routerLink]="['/dashboard/form']">
-    <mat-icon>add</mat-icon>Add User</button>
+ 
+   <button mat-raised-button color="accent" [routerLink]="['/dashboard/form']">
+    <mat-icon>add</mat-icon>Add User</button> -->
 
 <div class="container">
   <table class="table">
@@ -112,4 +113,58 @@
       </tr>
      
   </table>
-</div>
+</div>  
+
+
+
+
+
+
+ <!-- Commented section start  --> 
+
+
+  <!-- <mat-toolbar class="mat-elevation-z8">
+    <button
+      mat-icon-button
+      *ngIf="sidenav.mode === 'over'"
+      (click)="sidenav.toggle()" >
+      <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+      <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+    </button>
+    Welcome
+  </mat-toolbar>
+
+
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+     
+      <h4 class="name">DashBoard</h4>
+  
+      <mat-divider></mat-divider>
+  
+      <button mat-button class="menu-button" [routerLink]="'/dashboard/dash'">
+        <mat-icon>home</mat-icon>
+        <span>Home</span>
+      </button>
+      <button mat-button class="menu-button" [routerLink]="'/dashboard/form'">
+        <mat-icon>person</mat-icon>
+        <span> Profile Add</span>
+      </button>
+      <button mat-button class="menu-button" [routerLink]="'/dashboard/user'">
+        <mat-icon>list</mat-icon>
+        <span>User List</span>
+      </button>
+      
+      <mat-divider></mat-divider>
+  
+      <button mat-button class="menu-button" >
+        <mat-icon>help</mat-icon>
+        <span>Help</span>
+      </button>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="content mat-elevation-z8">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container> -->

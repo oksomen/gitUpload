@@ -12,7 +12,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  public url = "http://192.168.0.64:4000/routes/"
+  public url = "http://192.168.0.64:4000/routes/";
 
   public data : any = "";
   

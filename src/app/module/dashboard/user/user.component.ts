@@ -4,6 +4,7 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ApiService } from 'src/app/service/api.service';
+import { MatSidenav } from '@angular/material/sidenav';
 
 
 // export interface PeriodicElement {
@@ -60,12 +61,14 @@ const ADDRESS: any = []
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.css']
 })
+
+
 export class UserComponent implements OnInit {
 
   //   displayedColumns: string[] = ['position', 'name', 'email',
   //   'phone', 'address', 'actions'];
   //  dataSource = ELEMENT_DATA;
-
+  
 
   displayedColumns: any = ['position', 'name', 'phone', 'email', 'address'];
   dataSource: MatTableDataSource<UserData> | any;
@@ -145,7 +148,7 @@ export class UserComponent implements OnInit {
     //     console.log(this.editForm);
     //   });
 
-    this.router.navigate(['/dashboard/edit',this._id]);
+    this.router.navigate(['/dashboard/dash/edit',this._id]);
 
 
   }
